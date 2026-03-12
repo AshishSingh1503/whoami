@@ -113,7 +113,7 @@ Every time you push to the `main` branch, GitHub Actions will automatically depl
 
 ## 📧 Contact
 
-- Email: ashish@example.com
+- Email: singhashish150305@gmail.com
 - LinkedIn: [ashish-singh-70b7082a0](https://www.linkedin.com/in/ashish-singh-70b7082a0/)
 - GitHub: [AshishSingh1503](https://github.com/AshishSingh1503)
 
