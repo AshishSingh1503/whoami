@@ -18,7 +18,7 @@ AOS.init({
 // Typed.js animation
 if (document.querySelector('.typed')) {
     new Typed('.typed', {
-        strings: ['AWS', 'Terraform', 'Kubernetes', 'Docker', 'CI/CD Pipelines', 'Infrastructure as Code'],
+        strings: ['AWS', 'Terraform', 'Kubernetes', 'Docker', 'CI/CD Pipelines', 'Observability', 'Infrastructure as Code'],
         typeSpeed: 80,
         backSpeed: 50,
         backDelay: 2000,
