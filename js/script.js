@@ -1,27 +1,44 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+const sectionLinks = document.querySelectorAll('a[href^="#"]');
+const observedSections = document.querySelectorAll("main section[id]");
+
+sectionLinks.forEach((anchor) => {
+    anchor.addEventListener("click", function (event) {
+        event.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
         if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
         }
     });
 });
 
-// Initialize AOS (Animate On Scroll)
 AOS.init({
-    duration: 1000,
+    duration: 900,
     once: true,
-    offset: 100
+    offset: 90
 });
 
-// Typed.js animation
-if (document.querySelector('.typed')) {
-    new Typed('.typed', {
-        strings: ['AWS', 'Terraform', 'Kubernetes', 'Docker', 'CI/CD Pipelines', 'Observability', 'Infrastructure as Code'],
-        typeSpeed: 80,
-        backSpeed: 50,
-        backDelay: 2000,
-        loop: true
-    });
+if (observedSections.length) {
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    const setActiveLink = (id) => {
+        navLinks.forEach((link) => {
+            link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
+        });
+    };
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setActiveLink(entry.target.id);
+                }
+            });
+        },
+        {
+            rootMargin: "-35% 0px -45% 0px",
+            threshold: 0.1
+        }
+    );
+
+    observedSections.forEach((section) => observer.observe(section));
 }

@@ -7,519 +7,441 @@
     <meta name="description" content="Ashish Singh DevOps Engineer portfolio focused on AWS, Kubernetes, Terraform, CI/CD, observability, and production infrastructure.">
     <meta name="keywords" content="Ashish Singh DevOps Engineer, AWS DevOps portfolio, Kubernetes engineer, Terraform infrastructure, CI/CD portfolio">
     <meta name="author" content="Ashish Singh">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <h1 class="logo">Ashish<span class="logo-accent">Singh</span></h1>
-            <ul class="nav-links">
-                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#tech-stack"><i class="fas fa-code"></i> Skills</a></li>
-                <li><a href="#expertise"><i class="fas fa-server"></i> Expertise</a></li>
-                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
-                <li><a href="#certifications"><i class="fas fa-certificate"></i> Certifications</a></li>
-                <li><a href="#timeline"><i class="fas fa-road"></i> Journey</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-            <a href="Ashish_Singh (2).pdf" download class="nav-cta-btn">
-                <i class="fas fa-download"></i> Resume
-            </a>
-        </div>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="floating-icons">
-            <div class="float-icon" style="top: 20%; left: 10%;">☁️</div>
-            <div class="float-icon" style="top: 60%; left: 15%;">🐳</div>
-            <div class="float-icon" style="top: 30%; right: 10%;">⚙️</div>
-            <div class="float-icon" style="top: 70%; right: 15%;">🚀</div>
-            <div class="float-icon" style="top: 50%; left: 5%;">☸️</div>
-            <div class="float-icon" style="top: 40%; right: 5%;">📦</div>
-        </div>
-        <div class="container">
-            <div class="hero-badge" data-aos="fade-down">DevOps Engineer Portfolio</div>
-            <h1 data-aos="fade-down" data-aos-delay="100">Ashish Singh</h1>
-            <h2 class="title" data-aos="fade-down" data-aos-delay="200">DevOps Engineer | Cloud Infrastructure | Platform Automation</h2>
-            <p class="value-prop" data-aos="fade-up" data-aos-delay="400">I design and automate reliable cloud platforms with <span class="typed"></span> so teams can ship faster, scale safely, and operate with confidence.</p>
-            
-            <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
-                <div class="hero-stat-item">
-                    <i class="fas fa-project-diagram"></i>
-                    <span>Production-Style Projects</span>
-                </div>
-                <div class="hero-stat-item">
-                    <i class="fas fa-infinity"></i>
-                    <span>CI/CD & IaC Focused</span>
-                </div>
-                <div class="hero-stat-item">
-                    <i class="fas fa-chart-line"></i>
-                    <span>Observability Mindset</span>
-                </div>
-            </div>
-
-            <div class="hero-pillars" data-aos="fade-up" data-aos-delay="550">
-                <span>Cloud Architecture</span>
-                <span>Infrastructure as Code</span>
-                <span>Container Platforms</span>
-                <span>Monitoring & Reliability</span>
-            </div>
-
-            <div class="social-links" data-aos="fade-up" data-aos-delay="600">
-                <a href="https://github.com/AshishSingh1503" target="_blank" class="social-btn" title="GitHub">
-                    <i class="fab fa-github"></i> GitHub
+    <div class="page-shell">
+        <nav>
+            <div class="container nav-inner">
+                <a href="#home" class="brand-mark">
+                    <span class="brand-kicker">DevOps Portfolio</span>
+                    <span class="logo">Ashish Singh</span>
                 </a>
-                <a href="https://www.linkedin.com/in/ashish-singh-70b7082a0/" target="_blank" class="social-btn" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="mailto:singhashish150305@gmail.com" class="social-btn" title="Email">
-                    <i class="fas fa-envelope"></i> Email
-                </a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#tech-stack">Stack</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#timeline">Journey</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="Ashish_Singh (2).pdf" download class="nav-cta-btn">Resume</a>
             </div>
-            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="800">
-                <a href="#projects" class="btn btn-primary">
-                    <i class="fas fa-briefcase"></i> View Projects
-                </a>
-                <a href="Ashish_Singh (2).pdf" download class="btn btn-secondary">
-                    <i class="fas fa-download"></i> Download Resume
-                </a>
-            </div>
-        </div>
-    </section>
+        </nav>
 
-    <section id="about">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Introduction</span>
-                <h2>About Me</h2>
-                <p class="section-subtitle">DevOps Engineer focused on automation, resilience, and scalable delivery systems</p>
-            </div>
-            <div class="about-content">
-                <div class="about-left" data-aos="fade-right">
-                    <div class="profile-card">
-                        <img src="images/profile.jpg" alt="Ashish Singh" class="profile-img">
-                        <div class="profile-status">
-                            <i class="fas fa-circle"></i> Available for Opportunities
+        <main>
+            <section id="home" class="hero">
+                <div class="hero-grid"></div>
+                <div class="hero-orb hero-orb-one"></div>
+                <div class="hero-orb hero-orb-two"></div>
+                <div class="container hero-layout">
+                    <div class="hero-copy" data-aos="fade-right">
+                        <span class="hero-badge">Cloud Infrastructure / Automation / Reliability</span>
+                        <p class="eyebrow">Developer Portfolio</p>
+                        <h1>Building resilient cloud systems that feel calm under pressure.</h1>
+                        <p class="hero-text">
+                            I am Ashish Singh, a DevOps engineer focused on AWS platforms, infrastructure as code,
+                            container delivery, and observability. I turn manual deployment chaos into repeatable
+                            systems teams can trust.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                            <a href="#contact" class="btn btn-secondary">Book a Conversation</a>
                         </div>
-                    </div>
-                </div>
-                <div class="about-right" data-aos="fade-left">
-                    <p class="intro">I am an aspiring DevOps Engineer building hands-on experience across cloud infrastructure, container platforms, CI/CD systems, and observability. I enjoy turning manual workflows into repeatable automation, designing secure deployment patterns, and creating platforms that are easier to operate in real production environments.</p>
-                    
-                    <div class="highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Designing cloud-native architectures on AWS and GCP</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Provisioning environments with Infrastructure as Code using Terraform</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Deploying containerized workloads with Docker, ECS, and Kubernetes</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Improving delivery speed through CI/CD pipelines, monitoring, and automation</span>
+                        <div class="hero-foot">
+                            <a href="https://github.com/AshishSingh1503" target="_blank" class="inline-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/ashish-singh-70b7082a0/" target="_blank" class="inline-link">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="mailto:singhashish150305@gmail.com" class="inline-link">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
                         </div>
                     </div>
 
-                    <div class="quick-stats">
-                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
-                            <i class="fas fa-code-branch stat-icon"></i>
-                            <h3>CI/CD</h3>
-                            <p>Automated build and deployment workflows</p>
+                    <div class="hero-panel" data-aos="fade-left" data-aos-delay="150">
+                        <div class="hero-panel-top">
+                            <span class="terminal-label">Platform Snapshot</span>
+                            <span class="status-pill">Open to Opportunities</span>
                         </div>
-                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
-                            <i class="fas fa-binoculars stat-icon"></i>
-                            <h3>Observability</h3>
-                            <p>Metrics, dashboards, logs, and operational visibility</p>
+                        <div class="terminal-window">
+                            <div class="terminal-line"><span>$ role</span><strong> DevOps Engineer</strong></div>
+                            <div class="terminal-line"><span>$ focus</span><strong> AWS / Terraform / Kubernetes / CI-CD</strong></div>
+                            <div class="terminal-line"><span>$ approach</span><strong> automate, secure, observe, scale</strong></div>
+                            <div class="terminal-line"><span>$ currently_building</span><strong> production-style cloud systems</strong></div>
+                        </div>
+                        <div class="hero-stats">
+                            <article class="hero-stat-card">
+                                <span class="stat-value">4+</span>
+                                <span class="stat-label">Flagship projects</span>
+                            </article>
+                            <article class="hero-stat-card">
+                                <span class="stat-value">IaC</span>
+                                <span class="stat-label">Terraform-first workflows</span>
+                            </article>
+                            <article class="hero-stat-card">
+                                <span class="stat-value">24/7</span>
+                                <span class="stat-label">Reliability mindset</span>
+                            </article>
+                            <article class="hero-stat-card">
+                                <span class="stat-value">Obs</span>
+                                <span class="stat-label">Monitoring and visibility</span>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section-dark">
+                <div class="container">
+                    <div class="section-header section-header-left" data-aos="fade-up">
+                        <span class="section-tag">About</span>
+                        <h2>Engineering delivery systems, not just deployments.</h2>
+                        <p class="section-subtitle">
+                            Inspired by product-style portfolio layouts, this version presents my work like a platform story:
+                            what I build, how I think, and why reliability matters.
+                        </p>
+                    </div>
+                    <div class="about-layout">
+                        <div class="about-card profile-card" data-aos="fade-up" data-aos-delay="100">
+                            <img src="images/profile.jpg" alt="Ashish Singh" class="profile-img">
+                            <div class="profile-status">
+                                <i class="fas fa-circle"></i> Available for internships, cloud roles, and platform work
+                            </div>
+                        </div>
+                        <div class="about-card about-story" data-aos="fade-up" data-aos-delay="200">
+                            <p class="intro">
+                                I enjoy designing systems where infrastructure, automation, and monitoring work together.
+                                My interest in DevOps comes from making software delivery smoother: fewer fragile handoffs,
+                                clearer operations, and infrastructure that can be recreated with confidence.
+                            </p>
+                            <div class="highlight-grid">
+                                <div class="highlight-item">
+                                    <i class="fas fa-cloud"></i>
+                                    <span>Architecting cloud-native environments on AWS and GCP</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>Provisioning repeatable infrastructure with Terraform</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-cubes"></i>
+                                    <span>Shipping containerized apps with Docker, ECS, and Kubernetes</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Designing observability for faster troubleshooting and safer releases</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <section id="tech-stack">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Technical Skills</span>
-                <h2>Tech Stack</h2>
-                <p class="section-subtitle">Technologies I use to build, automate, deploy, and operate systems</p>
-            </div>
-            
-            <div class="tech-category" data-aos="fade-up" data-aos-delay="100">
-                <h3>Cloud</h3>
-                <div class="tech-grid">
-                    <div class="tech-item">AWS</div>
-                    <div class="tech-item">GCP</div>
-                    <div class="tech-item">EC2</div>
-                    <div class="tech-item">VPC</div>
-                    <div class="tech-item">S3</div>
-                    <div class="tech-item">IAM</div>
-                    <div class="tech-item">CloudFront</div>
-                    <div class="tech-item">ALB</div>
-                    <div class="tech-item">Cloud Run</div>
-                </div>
-            </div>
-
-            <div class="tech-category" data-aos="fade-up" data-aos-delay="200">
-                <h3>DevOps</h3>
-                <div class="tech-grid">
-                    <div class="tech-item">Docker</div>
-                    <div class="tech-item">Kubernetes</div>
-                    <div class="tech-item">ECS Fargate</div>
-                    <div class="tech-item">Terraform</div>
-                    <div class="tech-item">Jenkins</div>
-                    <div class="tech-item">GitHub Actions</div>
-                    <div class="tech-item">Linux</div>
-                    <div class="tech-item">Nginx</div>
-                </div>
-            </div>
-
-            <div class="tech-category" data-aos="fade-up" data-aos-delay="300">
-                <h3>Monitoring & Operations</h3>
-                <div class="tech-grid">
-                    <div class="tech-item">Prometheus</div>
-                    <div class="tech-item">Grafana</div>
-                    <div class="tech-item">ELK Stack</div>
-                    <div class="tech-item">CloudWatch</div>
-                    <div class="tech-item">Logging</div>
-                    <div class="tech-item">Alerting</div>
-                </div>
-            </div>
-
-            <div class="tech-category" data-aos="fade-up" data-aos-delay="400">
-                <h3>Scripting & Collaboration</h3>
-                <div class="tech-grid">
-                    <div class="tech-item">Python</div>
-                    <div class="tech-item">Bash</div>
-                    <div class="tech-item">C++</div>
-                    <div class="tech-item">Git</div>
-                    <div class="tech-item">GitHub</div>
-                    <div class="tech-item">Automation</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="expertise">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Core Expertise</span>
-                <h2>What I Bring as a DevOps Engineer</h2>
-                <p class="section-subtitle">A portfolio aligned to how modern engineering teams build, ship, and operate software</p>
-            </div>
-            <div class="expertise-grid">
-                <div class="expertise-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="expertise-icon"><i class="fas fa-cloud"></i></div>
-                    <h3>Cloud Infrastructure</h3>
-                    <p>Building secure, scalable environments with VPC design, compute, storage, networking, and deployment patterns across AWS and GCP.</p>
-                </div>
-                <div class="expertise-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="expertise-icon"><i class="fas fa-code"></i></div>
-                    <h3>Infrastructure as Code</h3>
-                    <p>Using Terraform to create repeatable environments, standardize infrastructure, and reduce configuration drift between stages.</p>
-                </div>
-                <div class="expertise-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="expertise-icon"><i class="fas fa-sync-alt"></i></div>
-                    <h3>CI/CD Automation</h3>
-                    <p>Automating build, test, and deployment workflows so releases become faster, safer, and easier to maintain.</p>
-                </div>
-                <div class="expertise-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="expertise-icon"><i class="fas fa-heartbeat"></i></div>
-                    <h3>Observability</h3>
-                    <p>Adding dashboards, metrics, logs, and health visibility that help teams detect issues quickly and operate services confidently.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Portfolio</span>
-                <h2>Featured Projects</h2>
-                <p class="section-subtitle">DevOps projects centered on infrastructure, automation, deployment, and reliability</p>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-dna"></i>
-                        </div>
-                        <span class="project-badge">AWS</span>
+            <section id="tech-stack" class="section-contrast">
+                <div class="container">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-tag">Tech Stack</span>
+                        <h2>Tools I use to build production-style platforms</h2>
+                        <p class="section-subtitle">A clean systems view of the platforms, automation layers, and operational tools behind my work.</p>
                     </div>
-                    <h3>GenomeGuard — AI-Powered Genetic Disease Prediction Platform</h3>
-                    <p class="project-desc">Architected and deployed an enterprise-grade, cloud-native AI platform for genomic disease risk prediction. Designed end-to-end AWS architecture with CloudFront, S3, ALB, ECS Fargate, and DocumentDB (Multi-AZ). Implemented asynchronous processing using SQS and worker containers for scalable genomic analysis.</p>
-                    
-                    <div class="project-highlights">
-                        <div class="project-highlight">
-                            <i class="fas fa-check"></i> Multi-AZ deployment
+                    <div class="stack-board">
+                        <article class="stack-column" data-aos="fade-up" data-aos-delay="100">
+                            <h3>Cloud</h3>
+                            <div class="tech-grid">
+                                <div class="tech-item">AWS</div>
+                                <div class="tech-item">GCP</div>
+                                <div class="tech-item">EC2</div>
+                                <div class="tech-item">S3</div>
+                                <div class="tech-item">VPC</div>
+                                <div class="tech-item">CloudFront</div>
+                                <div class="tech-item">ALB</div>
+                                <div class="tech-item">Cloud Run</div>
+                            </div>
+                        </article>
+                        <article class="stack-column" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Platform & Delivery</h3>
+                            <div class="tech-grid">
+                                <div class="tech-item">Docker</div>
+                                <div class="tech-item">Kubernetes</div>
+                                <div class="tech-item">ECS Fargate</div>
+                                <div class="tech-item">Terraform</div>
+                                <div class="tech-item">Jenkins</div>
+                                <div class="tech-item">GitHub Actions</div>
+                                <div class="tech-item">Linux</div>
+                                <div class="tech-item">Nginx</div>
+                            </div>
+                        </article>
+                        <article class="stack-column" data-aos="fade-up" data-aos-delay="300">
+                            <h3>Observability & Scripting</h3>
+                            <div class="tech-grid">
+                                <div class="tech-item">Prometheus</div>
+                                <div class="tech-item">Grafana</div>
+                                <div class="tech-item">ELK Stack</div>
+                                <div class="tech-item">CloudWatch</div>
+                                <div class="tech-item">Python</div>
+                                <div class="tech-item">Bash</div>
+                                <div class="tech-item">Git</div>
+                                <div class="tech-item">Automation</div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="expertise" class="section-dark">
+                <div class="container">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-tag">Core Expertise</span>
+                        <h2>How I think about DevOps work</h2>
+                        <p class="section-subtitle">Not just tools, but the operating principles behind the systems I build.</p>
+                    </div>
+                    <div class="expertise-grid">
+                        <div class="expertise-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="expertise-icon"><i class="fas fa-network-wired"></i></div>
+                            <h3>Infrastructure Design</h3>
+                            <p>Designing scalable cloud foundations with secure networking, layered environments, and reusable deployment patterns.</p>
                         </div>
-                        <div class="project-highlight">
-                            <i class="fas fa-check"></i> Auto-scaling architecture
+                        <div class="expertise-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="expertise-icon"><i class="fas fa-laptop-code"></i></div>
+                            <h3>Infrastructure as Code</h3>
+                            <p>Using Terraform to reduce drift, standardize provisioning, and make infrastructure changes easier to review.</p>
                         </div>
-                        <div class="project-highlight">
-                            <i class="fas fa-check"></i> Infrastructure as Code
+                        <div class="expertise-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="expertise-icon"><i class="fas fa-rocket"></i></div>
+                            <h3>Release Automation</h3>
+                            <p>Building CI/CD pipelines that improve deployment speed while keeping delivery predictable and controlled.</p>
+                        </div>
+                        <div class="expertise-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="expertise-icon"><i class="fas fa-heartbeat"></i></div>
+                            <h3>Operational Visibility</h3>
+                            <p>Adding metrics, logs, dashboards, and alerting patterns so teams understand system behavior before incidents escalate.</p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <div class="tech-stack-tags">
-                        <span class="tag">AWS</span>
-                        <span class="tag">ECS Fargate</span>
-                        <span class="tag">Terraform</span>
-                        <span class="tag">DocumentDB</span>
-                        <span class="tag">SQS</span>
-                        <span class="tag">CloudFront</span>
+            <section id="projects" class="section-contrast">
+                <div class="container">
+                    <div class="section-header section-header-left" data-aos="fade-up">
+                        <span class="section-tag">Selected Work</span>
+                        <h2>Featured projects presented like platform case studies</h2>
+                        <p class="section-subtitle">Each project focuses on architecture, automation, and the operational decisions behind the build.</p>
                     </div>
-                    <div class="project-buttons">
-                        <a href="https://github.com/AshishSingh1503/HelixMind" target="_blank" class="project-btn github-btn">
-                            <i class="fab fa-github"></i> View Code
+                    <div class="projects-grid">
+                        <article class="project-card feature-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="project-meta">
+                                <span class="project-badge">AWS / AI Platform</span>
+                                <span class="project-index">01</span>
+                            </div>
+                            <h3>GenomeGuard - AI-Powered Genetic Disease Prediction Platform</h3>
+                            <p class="project-desc">Architected and deployed a cloud-native AWS platform for genomic disease risk prediction with CloudFront, S3, ALB, ECS Fargate, DocumentDB, SQS, and worker containers for asynchronous processing.</p>
+                            <div class="project-highlights">
+                                <div class="project-highlight"><i class="fas fa-check"></i> Multi-AZ deployment</div>
+                                <div class="project-highlight"><i class="fas fa-check"></i> Auto-scaling design</div>
+                                <div class="project-highlight"><i class="fas fa-check"></i> Terraform-driven infrastructure</div>
+                            </div>
+                            <div class="tech-stack-tags">
+                                <span class="tag">AWS</span>
+                                <span class="tag">ECS Fargate</span>
+                                <span class="tag">Terraform</span>
+                                <span class="tag">DocumentDB</span>
+                                <span class="tag">SQS</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/AshishSingh1503/HelixMind" target="_blank" class="project-btn github-btn">View Code</a>
+                                <a href="#contact" class="project-btn arch-btn">Discuss Project</a>
+                            </div>
+                        </article>
+
+                        <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="project-meta">
+                                <span class="project-badge">GCP / Serverless</span>
+                                <span class="project-index">02</span>
+                            </div>
+                            <h3>Scalable Document Processing Platform on GCP</h3>
+                            <p class="project-desc">Built a secure backend architecture using Cloud Run, Cloud SQL, managed services, and private networking for autoscaling document processing workflows.</p>
+                            <div class="project-highlights">
+                                <div class="project-highlight"><i class="fas fa-check"></i> Autoscaling compute</div>
+                                <div class="project-highlight"><i class="fas fa-check"></i> Private service communication</div>
+                                <div class="project-highlight"><i class="fas fa-check"></i> AI-assisted extraction</div>
+                            </div>
+                            <div class="tech-stack-tags">
+                                <span class="tag">GCP</span>
+                                <span class="tag">Cloud Run</span>
+                                <span class="tag">Cloud SQL</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/AshishSingh1503/pdf-to-csv" target="_blank" class="project-btn github-btn">View Code</a>
+                                <a href="#contact" class="project-btn arch-btn">Discuss Project</a>
+                            </div>
+                        </article>
+
+                        <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="project-meta">
+                                <span class="project-badge">Terraform / AWS</span>
+                                <span class="project-index">03</span>
+                            </div>
+                            <h3>AWS Multi-Tier Infrastructure with Terraform</h3>
+                            <p class="project-desc">Provisioned reusable infrastructure with public and private subnets, load balancing, bastion access, and security boundaries for a production-style AWS environment.</p>
+                            <div class="project-highlights">
+                                <div class="project-highlight"><i class="fas fa-check"></i> Network segmentation</div>
+                                <div class="project-highlight"><i class="fas fa-check"></i> Security-focused layout</div>
+                                <div class="project-highlight"><i class="fas fa-check"></i> Repeatable provisioning</div>
+                            </div>
+                            <div class="tech-stack-tags">
+                                <span class="tag">AWS</span>
+                                <span class="tag">Terraform</span>
+                                <span class="tag">Linux</span>
+                                <span class="tag">Networking</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/AshishSingh1503" target="_blank" class="project-btn github-btn">View Code</a>
+                                <a href="#contact" class="project-btn arch-btn">Discuss Project</a>
+                            </div>
+                        </article>
+
+                        <article class="project-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="project-meta">
+                                <span class="project-badge">Observability</span>
+                                <span class="project-index">04</span>
+                            </div>
+                            <h3>Monitoring and Reliability Stack</h3>
+                            <p class="project-desc">Implemented dashboards, metrics collection, and centralized logging practices with Prometheus, Grafana, and observability workflows that support fast troubleshooting.</p>
+                            <div class="project-highlights">
+                                <div class="project-highlight"><i class="fas fa-check"></i> Metrics collection</div>
+                                <div class="project-highlight"><i class="fas fa-check"></i> Dashboard design</div>
+                                <div class="project-highlight"><i class="fas fa-check"></i> Alert readiness</div>
+                            </div>
+                            <div class="tech-stack-tags">
+                                <span class="tag">Prometheus</span>
+                                <span class="tag">Grafana</span>
+                                <span class="tag">ELK</span>
+                                <span class="tag">Alerting</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/AshishSingh1503" target="_blank" class="project-btn github-btn">View Code</a>
+                                <a href="#contact" class="project-btn arch-btn">Discuss Project</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certifications" class="section-dark">
+                <div class="container">
+                    <div class="section-header" data-aos="fade-up">
+                        <span class="section-tag">Credentials</span>
+                        <h2>Focus areas I am actively sharpening</h2>
+                        <p class="section-subtitle">A compact view of the capabilities that support my transition into stronger platform and cloud engineering roles.</p>
+                    </div>
+                    <div class="cert-grid">
+                        <article class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fab fa-aws"></i>
+                            <h3>AWS Architecture</h3>
+                            <p>Hands-on work across networking, compute, storage, application delivery, and infrastructure design patterns.</p>
+                        </article>
+                        <article class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-cubes"></i>
+                            <h3>Containers & Orchestration</h3>
+                            <p>Practical experience with Docker, ECS, and Kubernetes for packaging and operating modern distributed workloads.</p>
+                        </article>
+                        <article class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-code-branch"></i>
+                            <h3>CI/CD & Automation</h3>
+                            <p>Using GitHub Actions, Jenkins, scripting, and repeatable workflows to make delivery safer and faster.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="timeline" class="section-contrast">
+                <div class="container">
+                    <div class="section-header section-header-left" data-aos="fade-up">
+                        <span class="section-tag">Journey</span>
+                        <h2>A progression toward platform engineering</h2>
+                        <p class="section-subtitle">The roadmap behind the portfolio and where I am heading next.</p>
+                    </div>
+                    <div class="timeline-grid">
+                        <article class="timeline-card" data-aos="fade-up" data-aos-delay="100">
+                            <span class="timeline-year">2024</span>
+                            <h3>Foundations</h3>
+                            <p>Started with Linux, Git, cloud fundamentals, and the full software delivery lifecycle.</p>
+                        </article>
+                        <article class="timeline-card" data-aos="fade-up" data-aos-delay="200">
+                            <span class="timeline-year">2025</span>
+                            <h3>Infrastructure</h3>
+                            <p>Built AWS and Terraform projects with stronger networking, provisioning, and deployment discipline.</p>
+                        </article>
+                        <article class="timeline-card" data-aos="fade-up" data-aos-delay="300">
+                            <span class="timeline-year">2026</span>
+                            <h3>Platform Thinking</h3>
+                            <p>Expanded into containers, CI/CD pipelines, observability, and production-style cloud architecture.</p>
+                        </article>
+                        <article class="timeline-card" data-aos="fade-up" data-aos-delay="400">
+                            <span class="timeline-year">Next</span>
+                            <h3>Impact</h3>
+                            <p>Targeting DevOps, cloud, and platform engineering roles where I can own automation and reliability outcomes.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <div class="container contact-layout">
+                    <div class="contact-copy" data-aos="fade-right">
+                        <span class="section-tag">Contact</span>
+                        <h2>Let's build systems that scale without losing clarity.</h2>
+                        <p class="section-subtitle">
+                            I'm open to internships, entry-level DevOps roles, cloud engineering opportunities, and ambitious technical collaborations.
+                        </p>
+                    </div>
+                    <div class="contact-grid" data-aos="fade-left">
+                        <a href="mailto:singhashish150305@gmail.com" class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <h3>Email</h3>
+                            <p>singhashish150305@gmail.com</p>
+                            <span class="contact-action">Send message</span>
                         </a>
-                        <a href="#contact" class="project-btn arch-btn">
-                            <i class="fas fa-sitemap"></i> Discuss Project
+                        <a href="https://www.linkedin.com/in/ashish-singh-70b7082a0/" target="_blank" class="contact-card">
+                            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                            <h3>LinkedIn</h3>
+                            <p>Connect professionally</p>
+                            <span class="contact-action">View profile</span>
+                        </a>
+                        <a href="https://github.com/AshishSingh1503" target="_blank" class="contact-card">
+                            <div class="contact-icon"><i class="fab fa-github"></i></div>
+                            <h3>GitHub</h3>
+                            <p>Browse repositories</p>
+                            <span class="contact-action">Explore code</span>
+                        </a>
+                        <a href="Ashish_Singh (2).pdf" download class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-file-pdf"></i></div>
+                            <h3>Resume</h3>
+                            <p>Download the latest PDF</p>
+                            <span class="contact-action">Get resume</span>
                         </a>
                     </div>
                 </div>
+            </section>
+        </main>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-file-pdf"></i>
-                        </div>
-                        <span class="project-badge">GCP</span>
-                    </div>
-                    <h3>Scalable Document Processing Platform on GCP</h3>
-                    <p class="project-desc">Built the deployment architecture for a compute-heavy document pipeline on GCP using Cloud Run, Cloud SQL, private networking, and managed services. The design emphasized autoscaling, secure service communication, and operational simplicity for backend workloads.</p>
-                    
-                    <div class="project-highlights">
-                        <div class="project-highlight">
-                            <i class="fas fa-check"></i> Serverless architecture
-                        </div>
-                        <div class="project-highlight">
-                            <i class="fas fa-check"></i> Private VPC networking
-                        </div>
-                        <div class="project-highlight">
-                            <i class="fas fa-check"></i> AI-powered extraction
-                        </div>
-                    </div>
-
-                    <div class="tech-stack-tags">
-                        <span class="tag">GCP</span>
-                        <span class="tag">Cloud Run</span>
-                        <span class="tag">Cloud SQL</span>
-                        <span class="tag">Document AI</span>
-                        <span class="tag">PostgreSQL</span>
-                    </div>
-                    <div class="project-buttons">
-                        <a href="https://github.com/AshishSingh1503/pdf-to-csv" target="_blank" class="project-btn github-btn">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                        <a href="#contact" class="project-btn arch-btn">
-                            <i class="fas fa-sitemap"></i> Discuss Project
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                        <span class="project-badge">Terraform</span>
-                    </div>
-                    <h3>AWS Multi-Tier Infrastructure with Terraform</h3>
-                    <p class="project-desc">Provisioned a reusable AWS environment with VPC networking, public and private subnets, NAT Gateway, bastion access, and load balancing. This project showcases foundational DevOps capabilities around infrastructure design, security boundaries, and repeatable provisioning.</p>
-                    
-                    <div class="project-highlights">
-                        <div class="project-highlight">
-                            <i class="fas fa-check"></i> Network segmentation
-                        </div>
-                        <div class="project-highlight">
-                            <i class="fas fa-check"></i> Security best practices
-                        </div>
-                        <div class="project-highlight">
-                            <i class="fas fa-check"></i> Automated provisioning
-                        </div>
-                    </div>
-
-                    <div class="tech-stack-tags">
-                        <span class="tag">AWS</span>
-                        <span class="tag">Terraform</span>
-                        <span class="tag">Linux</span>
-                        <span class="tag">Networking</span>
-                    </div>
-                    <div class="project-buttons">
-                        <a href="https://github.com/AshishSingh1503" target="_blank" class="project-btn github-btn">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                        <a href="#contact" class="project-btn arch-btn">
-                            <i class="fas fa-sitemap"></i> Discuss Project
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-chart-area"></i>
-                        </div>
-                        <span class="project-badge">Observability</span>
-                    </div>
-                    <h3>Monitoring and Reliability Stack</h3>
-                    <p class="project-desc">Implemented an observability stack using Prometheus, Grafana, and centralized logging practices to improve service visibility. The setup focused on actionable dashboards, alert readiness, and the foundations of SRE-style operations.</p>
-                    
-                    <div class="project-highlights">
-                        <div class="project-highlight">
-                            <i class="fas fa-check"></i> Metrics collection
-                        </div>
-                        <div class="project-highlight">
-                            <i class="fas fa-check"></i> Dashboarding and visualization
-                        </div>
-                        <div class="project-highlight">
-                            <i class="fas fa-check"></i> Operational troubleshooting
-                        </div>
-                    </div>
-
-                    <div class="tech-stack-tags">
-                        <span class="tag">Prometheus</span>
-                        <span class="tag">Grafana</span>
-                        <span class="tag">ELK</span>
-                        <span class="tag">Alerting</span>
-                    </div>
-                    <div class="project-buttons">
-                        <a href="https://github.com/AshishSingh1503" target="_blank" class="project-btn github-btn">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                        <a href="#contact" class="project-btn arch-btn">
-                            <i class="fas fa-sitemap"></i> Discuss Project
-                        </a>
-                    </div>
-                </div>
+        <footer>
+            <div class="container footer-inner">
+                <p>&copy; 2026 Ashish Singh. Built for cloud, automation, and reliability roles.</p>
+                <a href="#home" class="footer-link">Back to top</a>
             </div>
-        </div>
-    </section>
-
-    <section id="certifications">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Credentials</span>
-                <h2>Certifications & Focus Areas</h2>
-                <p class="section-subtitle">Signals of the tools, practices, and engineering areas I am actively building around</p>
-            </div>
-            <div class="cert-grid">
-                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
-                    <i class="fab fa-aws"></i>
-                    <h3>AWS Cloud & Architecture</h3>
-                    <p>Hands-on work with core AWS services for networking, compute, storage, and application delivery.</p>
-                </div>
-                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
-                    <i class="fas fa-cubes"></i>
-                    <h3>Containers & Orchestration</h3>
-                    <p>Practical exposure to Docker, ECS, and Kubernetes for packaging and operating distributed applications.</p>
-                </div>
-                <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
-                    <i class="fas fa-code-branch"></i>
-                    <h3>CI/CD & Automation</h3>
-                    <p>Experience automating delivery pipelines with GitHub Actions, Jenkins, scripting, and repeatable workflows.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="timeline">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Career Path</span>
-                <h2>DevOps Journey</h2>
-                <p class="section-subtitle">How my learning has evolved toward platform engineering and production operations</p>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2024</h3>
-                        <p>Started exploring Linux, cloud fundamentals, Git, and the DevOps lifecycle</p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2025</h3>
-                        <p>Built AWS infrastructure projects with Terraform and learned practical networking patterns</p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2026</h3>
-                        <p>Expanded into containers, CI/CD pipelines, observability, and production-style architecture</p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2027</h3>
-                        <p>Targeting DevOps, Cloud, or Platform Engineer roles with strong automation ownership</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Get In Touch</span>
-                <h2>Let's Build Reliable Systems</h2>
-                <p class="section-subtitle">Open to DevOps internships, cloud engineering roles, freelance builds, and technical collaborations</p>
-            </div>
-            <div class="contact-grid">
-                <a href="mailto:singhashish150305@gmail.com" class="contact-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                    <h3>Email</h3>
-                    <p>singhashish150305@gmail.com</p>
-                    <span class="contact-action">Send Message <i class="fas fa-arrow-right"></i></span>
-                </a>
-                <a href="https://www.linkedin.com/in/ashish-singh-70b7082a0/" target="_blank" class="contact-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
-                    <h3>LinkedIn</h3>
-                    <p>Connect with me</p>
-                    <span class="contact-action">View Profile <i class="fas fa-arrow-right"></i></span>
-                </a>
-                <a href="https://github.com/AshishSingh1503" target="_blank" class="contact-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="contact-icon"><i class="fab fa-github"></i></div>
-                    <h3>GitHub</h3>
-                    <p>Explore my repositories</p>
-                    <span class="contact-action">View Repos <i class="fas fa-arrow-right"></i></span>
-                </a>
-                <a href="Ashish_Singh (2).pdf" download class="contact-card" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="contact-icon"><i class="fas fa-file-pdf"></i></div>
-                    <h3>Resume</h3>
-                    <p>Download my latest CV</p>
-                    <span class="contact-action">Download PDF <i class="fas fa-arrow-right"></i></span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Ashish Singh | DevOps Engineer Portfolio</p>
-            <div class="footer-links">
-                <a href="#home">Back to Top <i class="fas fa-arrow-up"></i></a>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
