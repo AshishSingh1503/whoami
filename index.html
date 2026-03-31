@@ -411,8 +411,55 @@
                         <p class="section-subtitle">
                             I'm open to internships, entry-level DevOps roles, cloud engineering opportunities, and ambitious technical collaborations.
                         </p>
+                        <form class="contact-form" action="mailto:singhashish150305@gmail.com" method="post" enctype="text/plain">
+                            <div class="form-row">
+                                <label class="form-field">
+                                    <span>Name</span>
+                                    <input type="text" name="name" placeholder="Your name" required>
+                                </label>
+                                <label class="form-field">
+                                    <span>Email</span>
+                                    <input type="email" name="email" placeholder="you@example.com" required>
+                                </label>
+                            </div>
+                            <label class="form-field">
+                                <span>Subject</span>
+                                <input type="text" name="subject" placeholder="Project, internship, collaboration..." required>
+                            </label>
+                            <label class="form-field">
+                                <span>Message</span>
+                                <textarea name="message" rows="6" placeholder="Tell me a bit about your opportunity or idea." required></textarea>
+                            </label>
+                            <button type="submit" class="btn btn-primary contact-submit">Send Message</button>
+                            <p class="contact-note">This form opens your default email app with the message prefilled.</p>
+                        </form>
                     </div>
-                    <div class="contact-grid" data-aos="fade-left">
+                    <div class="contact-side" data-aos="fade-left">
+                        <div class="social-panel">
+                            <div class="social-panel-head">
+                                <span class="section-tag">Social Links</span>
+                                <h3>Connect with me across platforms</h3>
+                            </div>
+                            <div class="social-links-grid">
+                                <a href="https://github.com/AshishSingh1503" target="_blank" class="social-link-card">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/ashish-singh-70b7082a0/" target="_blank" class="social-link-card">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="mailto:singhashish150305@gmail.com" class="social-link-card">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </a>
+                                <a href="Ashish_Singh (2).pdf" download class="social-link-card">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span>Resume</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-grid">
                         <a href="mailto:singhashish150305@gmail.com" class="contact-card">
                             <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                             <h3>Email</h3>
@@ -437,6 +484,7 @@
                             <p>Download the latest PDF</p>
                             <span class="contact-action">Get resume</span>
                         </a>
+                        </div>
                     </div>
                 </div>
             </section>

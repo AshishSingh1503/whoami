@@ -2,7 +2,7 @@ document.body.classList.add("is-loading");
 
 const siteLoader = document.getElementById("site-loader");
 const loaderShownAt = Date.now();
-const minimumLoaderDuration = 3000;
+const minimumLoaderDuration = 1800;
 const sectionLinks = document.querySelectorAll('a[href^="#"]');
 const observedSections = document.querySelectorAll("main section[id]");
 
