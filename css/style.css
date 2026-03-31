@@ -20,6 +20,8 @@ html {
     --aqua: #62d0ff;
     --cyan: #2db6ff;
     --lime: #c7ff6d;
+    --gold: #ffd56a;
+    --peach: #ffb38a;
     --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
 }
 
@@ -28,9 +30,9 @@ body {
     line-height: 1.6;
     color: var(--text);
     background:
-        radial-gradient(circle at top left, rgba(49, 139, 255, 0.18), transparent 30%),
-        radial-gradient(circle at 85% 15%, rgba(199, 255, 109, 0.1), transparent 22%),
-        linear-gradient(180deg, #06101c 0%, #081423 45%, #050d18 100%);
+        radial-gradient(circle at top left, rgba(49, 139, 255, 0.16), transparent 30%),
+        radial-gradient(circle at 85% 15%, rgba(255, 213, 106, 0.12), transparent 24%),
+        linear-gradient(180deg, #08111d 0%, #0b1626 42%, #06101a 100%);
 }
 
 a {
@@ -151,7 +153,9 @@ section {
 
 .hero::before {
     content: "";
-    background: linear-gradient(90deg, rgba(5, 11, 19, 0.92) 0%, rgba(5, 11, 19, 0.56) 48%, rgba(5, 11, 19, 0.92) 100%);
+    background:
+        linear-gradient(115deg, rgba(7, 13, 22, 0.96) 0%, rgba(7, 13, 22, 0.8) 42%, rgba(7, 13, 22, 0.92) 100%),
+        radial-gradient(circle at 18% 22%, rgba(255, 211, 117, 0.1), transparent 24%);
 }
 
 .hero-orb {
@@ -165,7 +169,7 @@ section {
 .hero-orb-one {
     width: 340px;
     height: 340px;
-    background: radial-gradient(circle, rgba(98, 208, 255, 0.34), transparent 70%);
+    background: radial-gradient(circle, rgba(98, 208, 255, 0.3), transparent 70%);
     top: 14%;
     right: 6%;
 }
@@ -173,7 +177,7 @@ section {
 .hero-orb-two {
     width: 240px;
     height: 240px;
-    background: radial-gradient(circle, rgba(199, 255, 109, 0.18), transparent 70%);
+    background: radial-gradient(circle, rgba(255, 179, 138, 0.2), transparent 70%);
     bottom: 12%;
     left: 5%;
 }
@@ -199,19 +203,20 @@ section {
 }
 
 .hero-badge {
-    padding: 0.5rem 0.95rem;
+    padding: 0.56rem 1rem;
     margin-bottom: 18px;
-    background: rgba(98, 208, 255, 0.08);
-    color: var(--aqua);
+    background: rgba(255, 213, 106, 0.08);
+    color: var(--gold);
     font-size: 0.85rem;
+    box-shadow: inset 0 0 0 1px rgba(255, 213, 106, 0.08);
 }
 
 .eyebrow {
-    color: var(--lime);
+    color: rgba(237, 246, 255, 0.74);
     letter-spacing: 0.3em;
     text-transform: uppercase;
     font-size: 0.76rem;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .hero h1,
@@ -224,8 +229,32 @@ section {
 
 .hero h1 {
     font-size: clamp(2.8rem, 6vw, 5.6rem);
-    max-width: 10.5ch;
+    max-width: 11ch;
     margin-bottom: 22px;
+}
+
+.hero-intro {
+    color: var(--muted);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.hero-name,
+.hero-heading-rest {
+    display: block;
+}
+
+.hero-name {
+    color: #fff3c8;
+    background: linear-gradient(135deg, #fff7d1 0%, var(--gold) 52%, var(--peach) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 22px rgba(255, 213, 106, 0.16);
+}
+
+.hero-heading-rest {
+    margin-top: 0.2em;
 }
 
 .hero-text,
@@ -241,7 +270,7 @@ section {
 
 .hero-text {
     max-width: 620px;
-    font-size: 1.08rem;
+    font-size: 1.04rem;
     margin-bottom: 28px;
 }
 
@@ -279,6 +308,22 @@ section {
     gap: 22px;
 }
 
+.hero-feature-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0 0 28px;
+}
+
+.hero-feature-strip span {
+    padding: 0.72rem 1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
+    color: #dfe8f5;
+    font-size: 0.88rem;
+}
+
 .inline-link {
     text-decoration: none;
     color: var(--muted);
@@ -311,6 +356,9 @@ section {
     border-radius: 28px;
     position: relative;
     overflow: hidden;
+    background:
+        linear-gradient(180deg, rgba(14, 28, 48, 0.94), rgba(8, 18, 33, 0.96)),
+        var(--panel);
 }
 
 .hero-panel::before {
@@ -318,7 +366,7 @@ section {
     position: absolute;
     inset: 0 0 auto 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--aqua), var(--lime));
+    background: linear-gradient(90deg, var(--gold), var(--aqua), var(--lime));
 }
 
 .hero-panel-top {
