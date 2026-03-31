@@ -1,3 +1,6 @@
+document.body.classList.add("is-loading");
+
+const siteLoader = document.getElementById("site-loader");
 const sectionLinks = document.querySelectorAll('a[href^="#"]');
 const observedSections = document.querySelectorAll("main section[id]");
 
@@ -42,3 +45,17 @@ if (observedSections.length) {
 
     observedSections.forEach((section) => observer.observe(section));
 }
+
+window.addEventListener("load", () => {
+    if (!siteLoader) {
+        document.body.classList.remove("is-loading");
+        return;
+    }
+
+    siteLoader.classList.add("is-hidden");
+    document.body.classList.remove("is-loading");
+
+    window.setTimeout(() => {
+        siteLoader.remove();
+    }, 500);
+});

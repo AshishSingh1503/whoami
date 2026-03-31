@@ -35,8 +35,89 @@ body {
         linear-gradient(180deg, #08111d 0%, #0b1626 42%, #06101a 100%);
 }
 
+body.is-loading {
+    overflow: hidden;
+}
+
 a {
     color: inherit;
+}
+
+.site-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 2200;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background:
+        radial-gradient(circle at 50% 40%, rgba(98, 208, 255, 0.16), transparent 22%),
+        radial-gradient(circle at 50% 60%, rgba(255, 213, 106, 0.12), transparent 28%),
+        rgba(4, 10, 18, 0.96);
+    transition: opacity 0.45s ease, visibility 0.45s ease;
+}
+
+.site-loader.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.loader-core {
+    position: relative;
+    width: min(240px, 68vw);
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+}
+
+.loader-ring {
+    position: absolute;
+    inset: 10%;
+    border-radius: 50%;
+    border: 1px solid rgba(98, 208, 255, 0.18);
+    border-top-color: var(--aqua);
+    border-right-color: var(--gold);
+    animation: loader-spin 1.2s linear infinite;
+    box-shadow: 0 0 30px rgba(98, 208, 255, 0.08);
+}
+
+.loader-ring-delayed {
+    inset: 22%;
+    border-top-color: var(--lime);
+    border-right-color: var(--peach);
+    animation-duration: 1.7s;
+    animation-direction: reverse;
+}
+
+.loader-copy {
+    text-align: center;
+    display: grid;
+    gap: 8px;
+    z-index: 1;
+}
+
+.loader-label {
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    font-size: 0.72rem;
+}
+
+.loader-copy strong {
+    font-family: "Orbitron", sans-serif;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    color: #fff1bf;
+}
+
+@keyframes loader-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .page-shell {
