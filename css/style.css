@@ -875,11 +875,11 @@ footer {
     padding: 34px;
     border-radius: 36px;
     background:
-        radial-gradient(circle at top left, rgba(255, 213, 106, 0.16), transparent 34%),
+        radial-gradient(circle at top left, rgba(255, 213, 106, 0.12), transparent 34%),
         radial-gradient(circle at top right, rgba(98, 208, 255, 0.14), transparent 28%),
-        linear-gradient(180deg, rgba(248, 250, 254, 0.98), rgba(236, 241, 247, 0.96));
-    border: 1px solid rgba(255, 255, 255, 0.58);
-    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.24);
+        linear-gradient(180deg, rgba(10, 22, 38, 0.96), rgba(7, 17, 31, 0.94));
+    border: 1px solid rgba(98, 208, 255, 0.14);
+    box-shadow: var(--shadow);
     backdrop-filter: blur(12px);
     text-align: left;
 }
@@ -897,7 +897,7 @@ footer {
 }
 
 .form-field span {
-    color: #08111d;
+    color: #e5eff9;
     font-size: 0.98rem;
     font-weight: 700;
 }
@@ -907,16 +907,16 @@ footer {
     width: 100%;
     padding: 0.95rem 1rem;
     border-radius: 999px;
-    border: 1px solid rgba(8, 17, 29, 0.72);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(249, 251, 255, 0.82));
-    color: #08111d;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+    color: var(--text);
     font: inherit;
     transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
 .form-field input::placeholder,
 .form-field textarea::placeholder {
-    color: rgba(8, 17, 29, 0.36);
+    color: rgba(157, 181, 200, 0.82);
 }
 
 .form-field input:focus,
@@ -924,7 +924,7 @@ footer {
     outline: none;
     border-color: var(--cyan);
     box-shadow: 0 0 0 4px rgba(98, 208, 255, 0.14);
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .form-field textarea {
@@ -944,7 +944,7 @@ footer {
 
 .contact-note {
     margin-top: 14px;
-    color: rgba(8, 17, 29, 0.62);
+    color: var(--muted);
     font-size: 0.9rem;
 }
 
