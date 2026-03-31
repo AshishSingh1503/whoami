@@ -848,15 +848,14 @@ footer {
 }
 
 .contact-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
-    gap: 28px;
-    align-items: start;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-copy {
     display: grid;
     gap: 18px;
+    width: min(760px, 100%);
 }
 
 .contact-form {
@@ -932,79 +931,6 @@ footer {
     font-size: 0.9rem;
 }
 
-.contact-side {
-    display: grid;
-    gap: 20px;
-}
-
-.contact-panel {
-    min-height: 100%;
-    padding: 32px;
-    border-radius: 24px;
-    background: rgba(16, 16, 18, 0.92);
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    box-shadow: var(--shadow);
-    backdrop-filter: blur(12px);
-}
-
-.contact-pill {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 210px;
-    padding: 0.9rem 1.45rem;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    color: #f8fbff;
-    font-family: "Orbitron", sans-serif;
-    margin-bottom: 42px;
-}
-
-.contact-panel-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px 22px;
-}
-
-.contact-link-group {
-    display: grid;
-    align-content: start;
-    gap: 12px;
-}
-
-.contact-link-group h3 {
-    width: fit-content;
-    min-width: 150px;
-    padding: 0.42rem 0.95rem;
-    background: rgba(255, 255, 255, 0.94);
-    color: #08111d;
-    font-size: 1rem;
-}
-
-.contact-link-group a {
-    width: fit-content;
-    text-decoration: none;
-    color: #f4f7ff;
-    font-size: 1.05rem;
-    font-weight: 700;
-    transition: color 0.25s ease, transform 0.25s ease;
-}
-
-.contact-link-group a:hover {
-    color: var(--gold);
-    transform: translateX(4px);
-}
-
-.contact-link-group-wide {
-    grid-column: span 2;
-}
-
-.contact-panel-footer {
-    margin-top: 48px;
-    color: rgba(244, 247, 255, 0.8);
-    font-size: 0.94rem;
-}
-
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1056,7 +982,6 @@ footer {
 @media (max-width: 1080px) {
     .hero-layout,
     .about-layout,
-    .contact-layout,
     .stack-board,
     .expertise-grid,
     .projects-grid {
@@ -1107,13 +1032,8 @@ footer {
     .hero-stats,
     .highlight-grid,
     .form-row,
-    .contact-grid,
-    .contact-panel-grid {
+    .contact-grid {
         grid-template-columns: 1fr;
-    }
-
-    .contact-link-group-wide {
-        grid-column: auto;
     }
 
     .section-dark,
