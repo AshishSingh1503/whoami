@@ -140,7 +140,7 @@ const CLI_COMMANDS = {
     },
     resume: () => {
         const a = document.createElement("a");
-        a.href = "Ashish_Singh (2).pdf";
+        a.href = "Ashish_Singh_CV.pdf";
         a.download = "";
         a.click();
         return [{ t: "ok", v: "Downloading resume..." }];
