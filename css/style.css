@@ -1239,8 +1239,10 @@ body.cli-locked {
     word-break: break-word;
 }
 
-.cli-line.cmd  { color: var(--aqua); }
-.cli-line.info { color: var(--muted); }
+.cli-line.cmd   { color: var(--aqua); }
+.cli-line.info  { color: var(--muted); }
+.cli-line.ascii { color: var(--peach); }
+.cli-line.boot  { color: var(--lime); }
 .cli-line.ok   { color: var(--lime); }
 .cli-line.err  { color: #ff7b7b; }
 .cli-line.head { color: var(--gold); font-weight: 700; }

@@ -82,7 +82,25 @@ const CLI_COMMANDS = {
         { t: "ok",   v: "  github      — open GitHub profile" },
         { t: "ok",   v: "  linkedin    — open LinkedIn profile" },
         { t: "ok",   v: "  resume      — download resume" },
+        { t: "ok",   v: "  neofetch    — system-style profile summary" },
         { t: "ok",   v: "  clear       — clear terminal" },
+    ],
+    neofetch: () => [
+        { t: "ascii", v: "    .-----------------." },
+        { t: "ascii", v: "    | $ whoami        |" },
+        { t: "ascii", v: "    | > Ashish Singh  |" },
+        { t: "ascii", v: "    | DevOps Engineer |" },
+        { t: "ascii", v: "    '-----------------'" },
+        { t: "head", v: "ashish@portfolio" },
+        { t: "info", v: "-----------------" },
+        { t: "info", v: "OS       : DevOps Engineer 24.7 LTS" },
+        { t: "info", v: "Host     : ashishsingh.live" },
+        { t: "info", v: "Kernel   : automate-secure-observe-scale" },
+        { t: "info", v: "Shell    : bash (career.sh)" },
+        { t: "info", v: "Stack    : AWS · Terraform · Kubernetes · CI/CD" },
+        { t: "info", v: "Projects : 7 flagship builds" },
+        { t: "info", v: "Uptime   : 2024 — present" },
+        { t: "ok",   v: "Status   : Open to opportunities" },
     ],
     whoami: () => [
         { t: "head", v: "Ashish Singh — DevOps Engineer" },
@@ -154,16 +172,40 @@ const cliClose    = document.getElementById("cli-close");
 const cliOutput   = document.getElementById("cli-output");
 const cliInput    = document.getElementById("cli-input");
 
+const CLI_BOOT_SEQUENCE = [
+    { t: "boot", v: "[ OK ] Initializing portfolio kernel..." },
+    { t: "boot", v: "[ OK ] Mounting /projects" },
+    { t: "boot", v: "[ OK ] Mounting /skills" },
+    { t: "boot", v: "[ OK ] Starting network services" },
+    { t: "boot", v: "[ DONE ] Session ready." },
+    { t: "head", v: "Welcome to Ashish's portfolio terminal." },
+    { t: "info", v: 'Type "help" to see available commands.' },
+];
+
+function runBootSequence() {
+    cliInput.disabled = true;
+    let i = 0;
+    const step = () => {
+        if (i >= CLI_BOOT_SEQUENCE.length) {
+            cliInput.disabled = false;
+            cliInput.focus();
+            return;
+        }
+        printLines([CLI_BOOT_SEQUENCE[i]]);
+        i += 1;
+        setTimeout(step, 160);
+    };
+    step();
+}
+
 function cliOpen() {
     cliTerminal.classList.add("cli-open");
     cliTerminal.setAttribute("aria-hidden", "false");
     document.body.classList.add("cli-locked");
-    cliInput.focus();
     if (!cliOutput.children.length) {
-        printLines([
-            { t: "head", v: "Welcome to Ashish's portfolio terminal." },
-            { t: "info", v: 'Type "help" to see available commands.' },
-        ]);
+        runBootSequence();
+    } else {
+        cliInput.focus();
     }
 }
 
