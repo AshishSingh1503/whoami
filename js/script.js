@@ -102,11 +102,13 @@ const CLI_COMMANDS = {
         document.querySelector("#projects").scrollIntoView({ behavior: "smooth" });
         return [
             { t: "ok",   v: "Scrolling to Projects section..." },
-            { t: "info", v: "01 OpenAMI Guard — AWS AMI operations" },
-            { t: "info", v: "02 GenomeGuard   — AI genetic prediction platform" },
-            { t: "info", v: "03 PDF to CSV    — GCP document processing" },
-            { t: "info", v: "04 AWS Multi-Tier Infra — Terraform IaC" },
-            { t: "info", v: "05 This Portfolio — HTML/CSS/JS" },
+            { t: "info", v: "01 CreatorPulse — Multi-platform creator analytics" },
+            { t: "info", v: "02 FreightBot — AI-powered freight operations" },
+            { t: "info", v: "03 OpenAMI Guard — AWS AMI operations" },
+            { t: "info", v: "04 GenomeGuard   — AI genetic prediction platform" },
+            { t: "info", v: "05 PDF to CSV    — GCP document processing" },
+            { t: "info", v: "06 AWS Multi-Tier Infra — Terraform IaC" },
+            { t: "info", v: "07 This Portfolio — HTML/CSS/JS" },
         ];
     },
     journey: () => {
