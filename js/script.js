@@ -157,6 +157,7 @@ const cliInput    = document.getElementById("cli-input");
 function cliOpen() {
     cliTerminal.classList.add("cli-open");
     cliTerminal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("cli-locked");
     cliInput.focus();
     if (!cliOutput.children.length) {
         printLines([
@@ -169,6 +170,7 @@ function cliOpen() {
 function cliCloseTerminal() {
     cliTerminal.classList.remove("cli-open");
     cliTerminal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("cli-locked");
 }
 
 cliFab.addEventListener("click", () => {
@@ -198,11 +200,36 @@ function printLines(lines) {
     cliOutput.scrollTop = cliOutput.scrollHeight;
 }
 
+const cliHistory = [];
+let cliHistoryIndex = -1;
+let cliDraft = "";
+
 cliInput.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowUp") {
+        e.preventDefault();
+        if (!cliHistory.length) return;
+        if (cliHistoryIndex === -1) cliDraft = cliInput.value;
+        cliHistoryIndex = Math.min(cliHistoryIndex + 1, cliHistory.length - 1);
+        cliInput.value = cliHistory[cliHistory.length - 1 - cliHistoryIndex];
+        cliInput.setSelectionRange(cliInput.value.length, cliInput.value.length);
+        return;
+    }
+    if (e.key === "ArrowDown") {
+        e.preventDefault();
+        if (cliHistoryIndex === -1) return;
+        cliHistoryIndex -= 1;
+        cliInput.value = cliHistoryIndex === -1 ? cliDraft : cliHistory[cliHistory.length - 1 - cliHistoryIndex];
+        cliInput.setSelectionRange(cliInput.value.length, cliInput.value.length);
+        return;
+    }
     if (e.key !== "Enter") return;
     const raw = cliInput.value.trim().toLowerCase();
     cliInput.value = "";
     if (!raw) return;
+
+    cliHistory.push(raw);
+    cliHistoryIndex = -1;
+    cliDraft = "";
 
     printLines([{ t: "cmd", v: `❯ ${raw}` }]);
 

@@ -543,11 +543,13 @@
     </div>
 
     <!-- CLI Terminal Widget -->
-    <div id="cli-terminal" class="cli-terminal" aria-label="Interactive terminal" role="dialog" aria-hidden="true">
+    <div id="cli-terminal" class="cli-terminal" aria-label="Full-screen terminal" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="cli-header">
             <span class="cli-dots"><span></span><span></span><span></span></span>
             <span class="cli-title">ashish@portfolio:~$</span>
-            <button class="cli-close" id="cli-close" aria-label="Close terminal">&times;</button>
+            <button class="cli-close" id="cli-close" aria-label="Exit to site">
+                <span>Exit to site</span> &times;
+            </button>
         </div>
         <div class="cli-output" id="cli-output"></div>
         <div class="cli-input-row">
@@ -555,9 +557,9 @@
             <input type="text" id="cli-input" class="cli-input" placeholder="type help" autocomplete="off" spellcheck="false" aria-label="Terminal input">
         </div>
     </div>
-    <button class="cli-fab" id="cli-fab" aria-label="Open terminal">
+    <button class="cli-fab" id="cli-fab" aria-label="Move to CLI">
         <i class="fas fa-terminal"></i>
-        <span>Terminal</span>
+        <span>Move to CLI</span>
     </button>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
